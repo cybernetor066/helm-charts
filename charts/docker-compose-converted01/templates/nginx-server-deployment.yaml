@@ -27,7 +27,7 @@ spec:
         - image: nginx:latest
           name: nginx-server
           ports:
-            - containerPort: 8080
+            - containerPort: 80
             - containerPort: 443
           resources: {}
       restartPolicy: Always
