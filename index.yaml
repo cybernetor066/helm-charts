@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  first_chart_test:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-10-23T16:56:05.910347157Z"
+    description: A Helm chart for Kubernetes
+    digest: e1dd4cd8ed2d2002fb3cf479e1dc70287a3744ac6589cb58253a358d473535c3
+    name: first_chart_test
+    type: application
+    urls:
+    - https://github.com/cybernetor066/helm-charts/releases/download/first_chart_test-0.1.0/first_chart_test-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-10-23T16:56:05.766070891Z"
