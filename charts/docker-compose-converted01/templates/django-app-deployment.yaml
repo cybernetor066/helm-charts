@@ -23,6 +23,7 @@ spec:
       labels:
         io.kompose.service: django-app
     spec:
+      hostNetwork: true
       containers:
         - image: cybernetor066/test_websockets:v1.0
           name: django-app
