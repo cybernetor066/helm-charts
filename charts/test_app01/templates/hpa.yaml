@@ -1,5 +1,5 @@
 {{- if .Values.autoscaling.enabled }}
-apiVersion: autoscaling/v2beta1
+apiVersion: autoscaling/v3beta1
 kind: HorizontalPodAutoscaler
 metadata:
   name: {{ include "test_app01.fullname" . }}
@@ -7,7 +7,7 @@ metadata:
     {{- include "test_app01.labels" . | nindent 4 }}
 spec:
   scaleTargetRef:
-    apiVersion: apps/v1
+    apiVersion: apps/v3
     kind: Deployment
     name: {{ include "test_app01.fullname" . }}
   minReplicas: {{ .Values.autoscaling.minReplicas }}
