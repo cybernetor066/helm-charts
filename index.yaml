@@ -11,6 +11,18 @@ entries:
     urls:
     - https://github.com/cybernetor066/helm-charts/releases/download/docker-compose-0.0.1/docker-compose-0.0.1.tgz
     version: 0.0.1
+  docker-compose-djangohelloworld:
+  - apiVersion: v1
+    created: "2021-11-02T08:53:55.650871178Z"
+    description: A generated Helm Chart for docker-compose-djangohelloworld from Skippbox
+      Kompose
+    digest: 7aa1e0d3cf803fcd1828fecd0f10efc007c7b384cba0920d06e2ec4eca9a818a
+    keywords:
+    - docker-compose-djangohelloworld
+    name: docker-compose-djangohelloworld
+    urls:
+    - https://github.com/cybernetor066/helm-charts/releases/download/docker-compose-djangohelloworld-0.0.1/docker-compose-djangohelloworld-0.0.1.tgz
+    version: 0.0.1
   first_chart_test:
   - apiVersion: v2
     appVersion: 1.16.0
@@ -22,4 +34,4 @@ entries:
     urls:
     - https://github.com/cybernetor066/helm-charts/releases/download/first_chart_test-0.1.0/first_chart_test-0.1.0.tgz
     version: 0.1.0
-generated: "2021-10-23T16:56:05.766070891Z"
+generated: "2021-11-02T08:53:55.650887178Z"
