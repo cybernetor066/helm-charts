@@ -23,4 +23,5 @@ jobs:
         uses: helm/chart-releaser-action@v1.1.0
         env:
           CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-          APPEND_TO_RELEASE: true
+          # APPEND_TO_RELEASE: true
+          CR_SKIP_EXISTING: "true"
