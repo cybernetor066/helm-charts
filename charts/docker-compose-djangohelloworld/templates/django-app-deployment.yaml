@@ -1,0 +1,66 @@
+# apiVersion: apps/v1
+# kind: Deployment
+# metadata:
+#   annotations:
+#     kompose.cmd: kompose --file docker-compose-djangohelloworld.yaml convert -c
+#     kompose.version: 1.24.0 (4a2a0458)
+#   creationTimestamp: null
+#   labels:
+#     io.kompose.service: django-app
+#   name: django-app
+# spec:
+#   replicas: 1
+#   selector:
+#     matchLabels:
+#       io.kompose.service: django-app
+#   strategy: {}
+#   template:
+#     metadata:
+#       annotations:
+#         kompose.cmd: kompose --file docker-compose-djangohelloworld.yaml convert -c
+#         kompose.version: 1.24.0 (4a2a0458)
+#       creationTimestamp: null
+#       labels:
+#         io.kompose.service: django-app
+#     spec:
+#       hostNetwork: true
+#       containers:
+#         - image: cybernetor066/test_multistage:v1.0
+#           name: django-app
+#           resources: {}
+
+#           envFrom:
+#           - secretRef:
+#               name: mysecret
+          
+#       restartPolicy: Always
+# status: {}
+
+
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: django-app
+  labels:
+    app: django
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: django
+  template:
+    metadata:
+      labels:
+        app: django
+    spec:
+      containers:
+      - name: django
+        image: cybernetor066/test_multistage:v1.0
+        ports:
+        - containerPort: 8000
+        
+        envFrom:
+          - secretRef: 
+              name: mysecret 
