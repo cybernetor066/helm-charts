@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Chart.Name }}-configmap
+data:
+  DB: '0'
+  DB_HOST: redis-service
+  DB_PORT: '6379'
+
+
+
+
+
+
