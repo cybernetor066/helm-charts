@@ -56,4 +56,14 @@ entries:
     urls:
     - https://github.com/cybernetor066/helm-charts/releases/download/first_chart_test-0.1.0/first_chart_test-0.1.0.tgz
     version: 0.1.0
-generated: "2021-11-07T19:39:00.552917795Z"
+  nextflow-api:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2022-02-06T17:30:11.674203918Z"
+    description: A Helm chart for the nextflow-api
+    digest: 7679a6b718fb54d7b64a852d42242ce0ee293d27a445addbd49f65610c20556d
+    name: nextflow-api
+    urls:
+    - https://github.com/cybernetor066/helm-charts/releases/download/nextflow-api-0.1.2/nextflow-api-0.1.2.tgz
+    version: 0.1.2
+generated: "2022-02-06T17:30:11.674216118Z"
